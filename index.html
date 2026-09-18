@@ -871,13 +871,33 @@
       .v11-jet{width:198px;height:78px}
     }
 
+  
+    /* ===== V20 truth-first cleanup ===== */
+    .signal-card{display:none !important}
+    .hero-note{display:none !important}
+    .impact{padding-top:18px}
+    .footer{padding:10px 0 34px}
+    .footer-panel{grid-template-columns:1.25fr .95fr auto;gap:18px;border-top:1px solid var(--line);padding-top:18px}
+    .footer-quote{color:#6f685c;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+    @media (max-width:980px){
+      .footer-panel{grid-template-columns:1fr;justify-items:center;text-align:center}
+    }
+
+  
+    .nav-links a{
+      font-size:12px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-weight:500;
+    }
+
   </style>
 </head>
 <body>
 <header class="topbar">
   <div class="shell nav">
     <a class="brand" href="#top"><span class="brand-title">YASH KOTHARI</span><span class="brand-sub">Data Engineer · Writer · Creator</span></a>
-    <nav class="nav-links"><a href="#showcase">showcase</a><a href="#writing">writing</a><a href="#video">videos</a><a href="#proof">proof</a><a href="#contact">contact</a></nav>
+    <nav class="nav-links"><a href="#showcase">WORK</a><a href="#writing">WRITING</a><a href="#video">VIDEOS</a><a href="#proof">ABOUT</a></nav>
     <div class="nav-right"><span class="nav-pill">build · explain · amaze</span><a class="nav-btn" href="mailto:ykothari99@gmail.com">Let’s Connect →</a></div>
   </div>
 </header>
@@ -885,16 +905,16 @@
 <main id="top">
   <section class="hero">
     <div class="shell">
-      <div class="eyebrow reveal">5 years of data engineering · Spark · Databricks · Cloud</div>
-      <h1 class="headline serif reveal">I build <em>systems</em> that scale<br>and turn complexity into <em>signal</em>.</h1>
-      <p class="subline reveal">This portfolio is designed to do two things at once: prove the engineering depth and make the work feel memorable. Systems, writing, videos, and projects — all surfaced as experiences, not just links.</p>
+      <div class="eyebrow reveal">Data Engineer · Writer · Creator</div>
+      <h1 class="headline serif reveal">I build <em>systems</em> that scale<br>and <em>ideas</em> that travel.</h1>
+      <p class="subline reveal">Data engineering is the core. Writing and video are how I make technical ideas clearer, simpler, and easier to remember.</p>
 
       <div class="hero-grid">
         <aside class="side reveal">
-          <div class="side-kicker">01. Engineer</div>
-          <h2 class="serif">Systems<br>that perform.</h2>
-          <p class="serif">Spark, Databricks, orchestration, cloud and platform design — built to scale, built to be understood, and built to survive pressure.</p>
-          <a class="cta" href="#showcase"><span class="arrow">→</span><span>See flagship work</span></a>
+          <div class="side-kicker">01. Build</div>
+          <h2 class="serif">Systems<br>that scale.</h2>
+          <p class="serif">From pipelines to platforms, I design and build reliable systems that turn engineering complexity into something useful.</p>
+          <a class="cta" href="#showcase"><span class="arrow">→</span><span>Explore work</span></a>
         </aside>
 
         <section class="center reveal" aria-label="Interactive signal hero">
@@ -925,17 +945,17 @@
               <div class="nose"></div><div class="mouth"></div>
             </div>
 
-            <aside class="signal-card" id="signalCard"><div class="orb"></div><small>Active signal</small><h3 id="signalTitle">Data Engineer</h3><p id="signalDesc">Scalable systems, real-world pipelines, cloud platforms, and performance optimization that actually ships.</p></aside>
+            <aside class="signal-card" id="signalCard" aria-hidden="true"><div class="orb"></div><small></small><h3 id="signalTitle">Data Engineer</h3><p id="signalDesc">Scalable systems, real-world pipelines, cloud platforms, and performance optimization that actually ships.</p></aside>
           </div>
-          <div class="hero-note">Drag the signal freely. Bring it near a role to activate it.</div>
-          <div class="hero-chipbar"><span>Databricks Certified</span><span>Medium Writer</span><span>YouTube Creator</span><span>GitHub Projects</span></div>
+          
+          <div class="hero-chipbar"><span>Spark</span><span>Databricks</span><span>Writing</span><span>YouTube</span></div>
         </section>
 
         <aside class="side reveal">
-          <div class="side-kicker">02. Explain</div>
-          <h2 class="serif">Ideas<br>that stick.</h2>
-          <p class="serif">Articles and videos that turn difficult topics into visual explanations — because influence comes from clarity as much as capability.</p>
-          <a class="cta" href="#writing"><span class="arrow">→</span><span>Explore content</span></a>
+          <div class="side-kicker">02. Decode</div>
+          <h2 class="serif">Ideas<br>that travel.</h2>
+          <p class="serif">I write and create videos that turn difficult engineering concepts into clear, visual explanations.</p>
+          <a class="cta" href="#writing"><span class="arrow">→</span><span>Explore writing</span></a>
         </aside>
       </div>
     </div>
@@ -943,8 +963,8 @@
 
   <section class="impact reveal">
     <div class="shell impact-grid">
-      <div class="quote serif"><div class="quote-mark">“</div><div><p>Complex systems deserve clearer explanations — and a little theatre.</p><strong>Yash Kothari</strong></div></div>
-      <div class="metric"><b data-count="5">0</b><span>Years in Data Engineering</span></div>
+      <div class="quote serif"><div class="quote-mark">“</div><div><p>Complex systems. Clearer explanations. A brighter tomorrow.</p><strong>Yash Kothari</strong></div></div>
+      <div class="metric"><b data-count="5">0</b><span>Years in Data Engineering Videos</span></div>
       <div class="metric"><b data-count="70">0</b><span>% Productivity Lift</span></div>
       <div class="metric"><b data-count="30">0</b><span>% Cost Reduction</span></div>
       <div class="metric"><b data-count="1200">0</b><span>+ Tables Framework Scale</span></div>
@@ -953,7 +973,7 @@
 
   <section class="showcase shell" id="showcase">
     <div class="showcase-head reveal">
-      <div><div class="section-label">Selected work</div><h2 class="serif">A few things I’ve built and published.</h2><p class="serif">Projects, articles, and videos I’m proud of — with the work itself doing most of the talking.</p></div>
+      <div><div class="section-label">Selected work</div><h2 class="serif">Projects I want you to see first.</h2><p class="serif">A few projects and pieces of work that represent how I build, explain, and think.</p></div>
       <a class="resume-btn" href="#proof">Experience & credentials ↘</a>
     </div>
     <div class="showcase-grid">
@@ -1020,7 +1040,7 @@
   <section class="gallery shell" id="writing">
     <div class="gallery-grid">
       <div class="writing-wall">
-        <div class="wall-head reveal"><div><div class="section-label">My writing</div><h3 class="serif">How I explain Spark and systems.</h3><p class="serif">These are some of the pieces I’ve written to make technical topics clearer, more visual, and easier to remember.</p></div><a href="https://medium.com/@ykothari99" target="_blank" rel="noreferrer">Visit Medium ↗</a></div>
+        <div class="wall-head reveal"><div><div class="section-label">My writing</div><h3 class="serif">Writing I’m proud of.</h3><p class="serif">A selection of articles where I break down Spark internals and data engineering concepts in a simpler way.</p></div><a href="https://medium.com/@ykothari99" target="_blank" rel="noreferrer">Visit Medium ↗</a></div>
         <div class="article-list">
           <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/partitioning-strategies-in-spark-e1a0164a7673"><div class="topline"><span>Featured article</span><span>Medium ↗</span></div><div class="cover partitioncover"></div><h4 class="serif">Partitioning in Spark — The Ultimate Guide</h4><p class="serif">A strong flagship article because it reflects systems thinking, performance intuition, and the ability to teach at depth.</p><div class="article-foot"><span>Performance · Spark</span><span class="article-arrow">→</span></div></a>
           <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/shuffle-wars-may-the-hash-be-with-you-10bc7c817a21"><div class="topline"><span>Popular read</span><span>Medium ↗</span></div><div class="cover shuffle"><div class="shuffle-group left"><span></span><span></span><span></span><span></span></div><div class="shuffle-flow"><span class="shuffle-packet p1"></span><span class="shuffle-packet gold p2"></span><span class="shuffle-packet p3"></span><span class="shuffle-packet gold p4"></span><span class="shuffle-packet p5"></span><span class="shuffle-packet gold p6"></span></div><div class="shuffle-group right"><span></span><span></span><span></span><span></span></div></div><h4 class="serif">Shuffling in Spark: May the Hash Be With You!</h4><p class="serif">Technical depth with a memorable hook — exactly the kind of content that helps recruiters remember the person behind the engineering.</p><div class="article-foot"><span>Shuffle · Internals</span><span class="article-arrow">→</span></div></a>
@@ -1030,12 +1050,12 @@
       </div>
 
       <div class="video-wall" id="video">
-        <div class="wall-head reveal"><div><div class="section-label">My videos</div><h3 class="serif">How I teach on video.</h3><p class="serif">I use video to break down data engineering topics visually so the explanation feels clear, energetic, and worth staying with.</p></div><a href="https://www.youtube.com/@theycallmecoder" target="_blank" rel="noreferrer">Open channel ↗</a></div>
+        <div class="wall-head reveal"><div><div class="section-label">My videos</div><h3 class="serif">Videos I’ve created.</h3><p class="serif">Videos around Spark, PySpark, and data engineering concepts that I’ve created to explain ideas more visually.</p></div><a href="https://www.youtube.com/@theycallmecoder" target="_blank" rel="noreferrer">Visit YouTube ↗</a></div>
         <div class="video-grid">
-          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/videos"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Live breakdown</div><div class="video-scribble"><span style="width:86%"></span><span></span><span></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">Channel Showcase</h4><p class="serif">Use the channel as a body of work. The visual treatment here is meant to make someone curious before they even decide what to watch.</p><div class="topic-tags"><span>Explainers</span><span>Data Engineering</span><span>Visual Learning</span></div></a>
-          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=spark"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Spark internals</div><div class="video-scribble"><span style="width:78%"></span><span style="width:68%"></span><span style="width:52%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">Spark Internals</h4><p class="serif">A high-intent doorway for the audience most likely to care about your depth. Great for recruiters searching technical credibility fast.</p><div class="topic-tags"><span>Spark</span><span>Internals</span><span>Performance</span></div></a>
-          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=pyspark"><div class="video-frame"><div class="video-monitor"><div class="video-caption">PySpark focus</div><div class="video-scribble"><span style="width:84%"></span><span style="width:70%"></span><span style="width:46%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">PySpark Focus</h4><p class="serif">Practical, educational, and searchable. This makes your content feel useful while still feeling premium.</p><div class="topic-tags"><span>PySpark</span><span>Tutorials</span><span>Examples</span></div></a>
-          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=data%20engineering"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Data engineering</div><div class="video-scribble"><span style="width:82%"></span><span style="width:76%"></span><span style="width:54%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">Data Engineering</h4><p class="serif">Broader doorway into your channel for people who may not know the exact topic but do know they want someone who can explain modern data stacks clearly.</p><div class="topic-tags"><span>Modern Stack</span><span>Concepts</span><span>Systems</span></div></a>
+          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/videos"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Channel overview</div><div class="video-scribble"><span style="width:86%"></span><span></span><span></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">YouTube Channel</h4><p class="serif">A direct way to explore the videos I’ve published across Spark, PySpark, and data engineering topics.</p><div class="topic-tags"><span>Explainers</span><span>Data Engineering Videos</span><span>Visual Learning</span></div></a>
+          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=spark"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Spark internals</div><div class="video-scribble"><span style="width:78%"></span><span style="width:68%"></span><span style="width:52%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">Spark Videos</h4><p class="serif">A focused set of videos for people who want to explore Spark concepts and internals.</p><div class="topic-tags"><span>Spark</span><span>Internals</span><span>Performance</span></div></a>
+          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=pyspark"><div class="video-frame"><div class="video-monitor"><div class="video-caption">PySpark focus</div><div class="video-scribble"><span style="width:84%"></span><span style="width:70%"></span><span style="width:46%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">PySpark Videos</h4><p class="serif">A collection of PySpark-oriented videos built around practical explanations and examples.</p><div class="topic-tags"><span>PySpark</span><span>Tutorials</span><span>Examples</span></div></a>
+          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=data%20engineering"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Data engineering</div><div class="video-scribble"><span style="width:82%"></span><span style="width:76%"></span><span style="width:54%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">Data Engineering Videos</h4><p class="serif">A broader set of videos around data engineering concepts, systems, and modern stack ideas.</p><div class="topic-tags"><span>Modern Stack</span><span>Concepts</span><span>Systems</span></div></a>
         </div>
       </div>
     </div>
@@ -1062,7 +1082,7 @@
 </main>
 
 <footer class="footer shell" id="contact">
-  <div class="footer-panel"><div class="serif">Yash Kothari · Data Engineer</div><div class="footer-links"><a href="mailto:ykothari99@gmail.com">Email</a><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ykothari99">LinkedIn</a><a target="_blank" rel="noreferrer" href="https://github.com/theycallme-batman">GitHub</a><a target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99">Medium</a><a target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder">YouTube</a></div><div class="socials"><a target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder">YT</a><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ykothari99">in</a><a target="_blank" rel="noreferrer" href="https://github.com/theycallme-batman">GH</a></div></div>
+  <div class="footer-panel"><div class="footer-quote serif">“Complex systems. Clearer explanations. A brighter tomorrow.”</div><div class="footer-links"><a href="#showcase">Work</a><a href="#writing">Writing</a><a href="#video">Videos</a><a href="#proof">About</a></div><div class="socials"><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ykothari99">in</a><a target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder">YT</a><a target="_blank" rel="noreferrer" href="https://github.com/theycallme-batman">GH</a></div></div>
 </footer>
 
 <script>
