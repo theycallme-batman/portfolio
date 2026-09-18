@@ -891,6 +891,258 @@
       font-weight:500;
     }
 
+
+    /* ===== V21 final polish ===== */
+    .nav-right{margin-left:auto}
+    .proof-head{margin-bottom:18px}
+    .proof-head h2{margin-bottom:0}
+    .quote{align-items:center}
+    .quote p{max-width:420px}
+    .feature-kicker,.project-kicker{font-weight:600}
+    .signal,.trail,.drag-zone{display:none !important}
+    .orbit{cursor:default}
+
+
+    /* ===== V22 project-section refinement ===== */
+    .showcase-head h2{
+      margin-top:0;
+      font-size:56px;
+      line-height:.95;
+      max-width:none;
+    }
+
+    .showcase-head p{
+      margin-top:10px;
+      max-width:620px;
+    }
+
+    .showcase-project{
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+    }
+
+    .showcase-project .burger-visual{
+      height:240px;
+      min-height:240px;
+      margin-bottom:20px;
+    }
+
+    .showcase-project .project-actions{
+      margin-top:auto;
+      padding-top:18px;
+    }
+
+    .burger{
+      right:28px;
+      bottom:20px;
+      transform:scale(1.12);
+      transform-origin:bottom right;
+    }
+
+    .fries-cup{
+      left:28px;
+      bottom:24px;
+      transform:scale(1.08);
+      transform-origin:bottom left;
+    }
+
+    .stream-sink{
+      right:22px;
+      top:54px;
+    }
+
+    .burger-stream{
+      left:124px;
+      top:92px;
+      right:24px;
+    }
+
+    @media (max-width:1180px){
+      .showcase-project .burger-visual{
+        height:220px;
+        min-height:220px;
+      }
+    }
+
+    @media (max-width:640px){
+      .showcase-head h2{
+        font-size:40px;
+      }
+
+      .showcase-project .burger-visual{
+        height:200px;
+        min-height:200px;
+      }
+
+      .burger{
+        transform:scale(.96);
+        right:14px;
+      }
+
+      .fries-cup{
+        transform:scale(.94);
+        left:14px;
+      }
+    }
+
+
+    /* ===== V23 copy polish ===== */
+    .headline{max-width:1050px}
+    .subline{max-width:790px}
+    .showcase-head p,.wall-head p,.proof-head p{max-width:680px}
+    .quote p{font-size:20px;line-height:1.35;max-width:520px}
+    .footer-quote{text-transform:none;letter-spacing:.08em}
+
+
+    /* ===== V24 editorial navigation + quote cleanup ===== */
+    .nav-editorial{
+      position:relative;
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      min-height:72px;
+      gap:36px;
+    }
+
+    .nav-side{
+      display:flex;
+      align-items:center;
+      gap:34px;
+    }
+
+    .nav-left{justify-content:flex-end}
+    .nav-right-links{justify-content:flex-start}
+
+    .nav-side a{
+      color:#8b7d69;
+      text-decoration:none;
+      font-size:10px;
+      letter-spacing:.2em;
+      font-weight:700;
+      transition:color .2s ease, transform .2s ease;
+    }
+
+    .nav-side a:hover{
+      color:#f2e7d5;
+      transform:translateY(-1px);
+    }
+
+    .nav-name{
+      color:#f5ede0;
+      text-decoration:none;
+      font-size:17px;
+      line-height:1;
+      letter-spacing:.16em;
+      white-space:nowrap;
+      padding:0 22px;
+    }
+
+    .principle{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      padding:16px 18px;
+      border:1px solid rgba(216,190,142,.18);
+      border-radius:16px;
+      background:rgba(255,255,255,.018);
+    }
+
+    .principle .section-label{
+      flex:0 0 auto;
+      margin:0;
+    }
+
+    .principle p{
+      margin:0;
+      color:#d9cbb7;
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      font-size:11px;
+      line-height:1.55;
+      letter-spacing:.04em;
+    }
+
+    .footer-quote{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace !important;
+      font-size:11px !important;
+      letter-spacing:.14em !important;
+      text-transform:uppercase !important;
+      color:#8f806c !important;
+    }
+
+    @media (max-width:900px){
+      .nav-editorial{
+        grid-template-columns:1fr auto 1fr;
+        gap:18px;
+      }
+      .nav-side{gap:16px}
+      .nav-side a{font-size:9px;letter-spacing:.13em}
+      .nav-name{font-size:14px;padding:0 8px;letter-spacing:.12em}
+    }
+
+    @media (max-width:700px){
+      .nav-editorial{
+        display:flex;
+        justify-content:center;
+        min-height:66px;
+      }
+      .nav-side{display:none}
+      .nav-name{font-size:15px}
+    }
+
+
+    /* ===== V26 statement refinement ===== */
+    .statement{
+      position:relative;
+      padding:22px 0 22px 26px;
+      border-left:1px solid rgba(184,145,91,.72);
+    }
+
+    .statement p{
+      margin:0;
+      max-width:520px;
+      color:#b88f5f;
+      font-size:25px;
+      line-height:1.22;
+      letter-spacing:-.015em;
+    }
+
+    @media (max-width:760px){
+      .statement p{font-size:21px}
+    }
+
+
+    /* ===== V28 original navigation alignment ===== */
+    .topbar .nav{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+      align-items:center;
+      gap:24px;
+      flex-wrap:nowrap;
+    }
+
+    .topbar .brand{
+      justify-self:start;
+    }
+
+    .topbar .nav-links{
+      justify-self:center;
+      flex-wrap:nowrap;
+    }
+
+    .topbar .nav-right{
+      justify-self:end;
+      flex-wrap:nowrap;
+    }
+
+    @media (max-width:900px){
+      .topbar .nav{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -906,15 +1158,15 @@
   <section class="hero">
     <div class="shell">
       <div class="eyebrow reveal">Data Engineer · Writer · Creator</div>
-      <h1 class="headline serif reveal">I build <em>systems</em> that scale<br>and <em>ideas</em> that travel.</h1>
-      <p class="subline reveal">Data engineering is the core. Writing and video are how I make technical ideas clearer, simpler, and easier to remember.</p>
+      <h1 class="headline serif reveal">I build <em>data systems</em> that hold up<br>and <em>ideas</em> that stick.</h1>
+      <p class="subline reveal">I turn messy data into dependable systems — and complex ideas into explanations people remember.</p>
 
       <div class="hero-grid">
         <aside class="side reveal">
-          <div class="side-kicker">01. Build</div>
-          <h2 class="serif">Systems<br>that scale.</h2>
-          <p class="serif">From pipelines to platforms, I design and build reliable systems that turn engineering complexity into something useful.</p>
-          <a class="cta" href="#showcase"><span class="arrow">→</span><span>Explore work</span></a>
+          <div class="side-kicker">01. Engineer</div>
+          <h2 class="serif">Systems<br>that hold up.</h2>
+          <p class="serif">From pipelines to platforms, I build systems that are reliable, scalable, and useful when the real world gets messy.</p>
+          <a class="cta" href="#showcase"><span class="arrow">→</span><span>See the work</span></a>
         </aside>
 
         <section class="center reveal" aria-label="Interactive signal hero">
@@ -923,17 +1175,13 @@
             <div class="orbit-mid"></div>
             <div class="orbit-core"></div>
             <div class="orbit-glow"></div>
-            <canvas class="trail" id="trail"></canvas>
-            <div class="drag-zone" id="dragZone"></div>
 
-            <div class="pill p1 active" data-title="Data Engineer" data-desc="Scalable systems, real-world pipelines, cloud platforms, and performance optimization that actually ships."><span class="dot"></span><span>Data Engineer</span></div>
-            <div class="pill p2" data-title="Writer" data-desc="Long-form pieces that break down Spark internals and platform design with clarity and taste."><span class="dot"></span><span>Writer</span></div>
-            <div class="pill p3" data-title="YouTube Creator" data-desc="Visual explainers that turn engineering ideas into something instantly graspable and watchable."><span class="dot"></span><span>YouTube</span></div>
-            <div class="pill p4" data-title="Builder" data-desc="Projects that connect architecture, data modeling, and storytelling into one coherent portfolio."><span class="dot"></span><span>Builder</span></div>
-            <div class="pill p5" data-title="Teacher" data-desc="A way of explaining that helps people feel smart instead of overwhelmed."><span class="dot"></span><span>Teacher</span></div>
-            <div class="pill p6" data-title="Creator" data-desc="A portfolio identity that makes engineering work visually magnetic — not just technically solid."><span class="dot"></span><span>Creator</span></div>
-
-            <div class="signal" id="signal" aria-label="Drag signal"></div>
+            <div class="pill p1 active" data-title="Data Engineer" data-desc="Reliable pipelines, scalable platforms, and performance work designed for production — not demos."><span class="dot"></span><span>Data Engineer</span></div>
+            <div class="pill p2" data-title="Writer" data-desc="Deep technical writing that makes Spark internals and platform design easier to reason about."><span class="dot"></span><span>Writer</span></div>
+            <div class="pill p3" data-title="YouTube Creator" data-desc="Visual explainers that make technical ideas easier to follow without watering them down."><span class="dot"></span><span>YouTube</span></div>
+            <div class="pill p4" data-title="Builder" data-desc="Projects that connect architecture, data movement, transformation, and presentation into one complete system."><span class="dot"></span><span>Builder</span></div>
+            <div class="pill p5" data-title="Teacher" data-desc="Explanations designed to reduce friction, reveal the mechanism, and make the idea click."><span class="dot"></span><span>Teacher</span></div>
+            <div class="pill p6" data-title="Creator" data-desc="Technical work presented with the same care as the engineering behind it."><span class="dot"></span><span>Creator</span></div>
 
             <div class="character" id="character" aria-hidden="true">
               <div class="shadow"></div><div class="body"></div><div class="shirt"></div><div class="neck"></div><div class="ear left"></div><div class="ear right"></div><div class="face"></div>
@@ -945,17 +1193,17 @@
               <div class="nose"></div><div class="mouth"></div>
             </div>
 
-            <aside class="signal-card" id="signalCard" aria-hidden="true"><div class="orb"></div><small></small><h3 id="signalTitle">Data Engineer</h3><p id="signalDesc">Scalable systems, real-world pipelines, cloud platforms, and performance optimization that actually ships.</p></aside>
+            <aside class="signal-card" id="signalCard" aria-hidden="true"><div class="orb"></div><small></small><h3 id="signalTitle">Data Engineer</h3><p id="signalDesc">Reliable pipelines, scalable platforms, and performance work designed for production — not demos.</p></aside>
           </div>
           
           <div class="hero-chipbar"><span>Spark</span><span>Databricks</span><span>Writing</span><span>YouTube</span></div>
         </section>
 
         <aside class="side reveal">
-          <div class="side-kicker">02. Decode</div>
-          <h2 class="serif">Ideas<br>that travel.</h2>
-          <p class="serif">I write and create videos that turn difficult engineering concepts into clear, visual explanations.</p>
-          <a class="cta" href="#writing"><span class="arrow">→</span><span>Explore writing</span></a>
+          <div class="side-kicker">02. Explain</div>
+          <h2 class="serif">Ideas<br>that stick.</h2>
+          <p class="serif">I write and make videos that make difficult engineering ideas easier to see, understand, and remember.</p>
+          <a class="cta" href="#writing"><span class="arrow">→</span><span>Read the ideas</span></a>
         </aside>
       </div>
     </div>
@@ -963,24 +1211,26 @@
 
   <section class="impact reveal">
     <div class="shell impact-grid">
-      <div class="quote serif"><div class="quote-mark">“</div><div><p>Complex systems. Clearer explanations. A brighter tomorrow.</p><strong>Yash Kothari</strong></div></div>
-      <div class="metric"><b data-count="5">0</b><span>Years in Data Engineering</span></div>
-      <div class="metric"><b data-count="70">0</b><span>% Productivity Lift</span></div>
-      <div class="metric"><b data-count="30">0</b><span>% Cost Reduction</span></div>
-      <div class="metric"><b data-count="1200">0</b><span>+ Tables Framework Scale</span></div>
+      <div class="statement serif">
+              <p>At scale, small decisions become architecture.</p>
+            </div>
+      <div class="metric"><b data-count="5">0</b><span>Years building data systems</span></div>
+      <div class="metric"><b data-count="70">0</b><span>% productivity improvement</span></div>
+      <div class="metric"><b data-count="30">0</b><span>% cost reduction</span></div>
+      <div class="metric"><b data-count="1200">0</b><span>+ tables at framework scale</span></div>
     </div>
   </section>
 
   <section class="showcase shell" id="showcase">
     <div class="showcase-head reveal">
-      <div><div class="section-label">Selected work</div><h2 class="serif">Projects I want you to see first.</h2><p class="serif">A few projects and pieces of work that represent how I build, explain, and think.</p></div>
+      <div><h2 class="serif">Projects</h2><p class="serif">End-to-end systems built to move data, shape it, and turn it into something useful.</p></div>
       <a class="resume-btn" href="#proof">Experience & credentials ↘</a>
     </div>
     <div class="showcase-grid">
       <article class="feature-card tilt reveal click-card" data-href="https://github.com/theycallme-batman/Zathura-Airlines" role="link" tabindex="0">
-        <div class="feature-kicker"><span>Flagship build</span><span>Zathura Airlines</span></div>
+        <div class="feature-kicker"><span>Data platform</span><span>Zathura Airlines</span></div>
         <h3 class="feature-title serif">Zathura Airlines</h3>
-        <p class="feature-copy serif">An end-to-end airline data platform spanning ingestion, orchestration, Databricks transformations, storage, BI, and weather-driven flight analysis.</p>
+        <p class="feature-copy serif">An airline data platform built across ingestion, orchestration, Databricks transformation, storage, BI, and weather-aware flight analysis.</p>
         <div class="tag-row"><span>Databricks</span><span>PySpark</span><span>ADF</span><span>ADLS</span><span>Power BI</span></div>
         <div class="feature-visual zathura-visual">
           <div class="v11-scene">
@@ -1028,11 +1278,11 @@
 
       <article class="project-card showcase-project reveal tilt click-card" data-href="https://github.com/theycallme-batman/The-Burger-House" role="link" tabindex="0">
         <div class="project-visual alt burger-visual"><div class="burger-stage"><div class="order-ring"></div><div class="burger-stream"></div><div class="stream-sink">orders</div><span class="ketchup-drop"></span><span class="mustard-drop"></span><span class="sparkle s1"></span><span class="sparkle s2"></span><span class="sparkle s3"></span><div class="fries-cup"><span class="fry"></span><span class="fry"></span><span class="fry"></span><span class="fry"></span><span class="fry"></span></div><div class="burger"><span class="steam s1"></span><span class="steam s2"></span><span class="steam s3"></span><div class="layer bun-top"></div><div class="layer lettuce"></div><div class="layer cheese"></div><div class="layer patty"></div><div class="layer tomato"></div><div class="layer bun-bottom"></div></div></div></div>
-        <div class="project-kicker">Second showcase project</div>
+        <div class="project-kicker">Streaming system</div>
         <h3 class="serif">The Burger House</h3>
-        <p>Streaming restaurant events, transforming them through Databricks, and turning fast-moving operational data into a story. More playful visually, but still grounded in serious data engineering.</p>
+        <p>A streaming restaurant pipeline that moves live events through Databricks and turns operational data into analytics in near real time.</p>
         <div class="stack"><span class="chip">Kafka</span><span class="chip">Databricks</span><span class="chip">Snowflake</span><span class="chip">Power BI</span></div>
-        <div class="project-actions"><span class="project-link">Open project →</span><span class="project-icon">◎</span></div>
+        <div class="project-actions"><span class="project-link">View project →</span><span class="project-icon">◎</span></div>
       </article>
     </div>
   </section>
@@ -1040,73 +1290,64 @@
   <section class="gallery shell" id="writing">
     <div class="gallery-grid">
       <div class="writing-wall">
-        <div class="wall-head reveal"><div><div class="section-label">My writing</div><h3 class="serif">Writing I’m proud of.</h3><p class="serif">A selection of articles where I break down Spark internals and data engineering concepts in a simpler way.</p></div><a href="https://medium.com/@ykothari99" target="_blank" rel="noreferrer">Visit Medium ↗</a></div>
+        <div class="wall-head reveal"><div><div class="section-label">Writing</div><h3 class="serif">Ideas, made clearer.</h3><p class="serif">Deep dives into Spark internals, performance, and data engineering — written to reveal what is actually happening underneath.</p></div><a href="https://medium.com/@ykothari99" target="_blank" rel="noreferrer">Read on Medium ↗</a></div>
         <div class="article-list">
-          <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/partitioning-strategies-in-spark-e1a0164a7673"><div class="topline"><span>Featured article</span><span>Medium ↗</span></div><div class="cover partitioncover"></div><h4 class="serif">Partitioning in Spark — The Ultimate Guide</h4><p class="serif">A strong flagship article because it reflects systems thinking, performance intuition, and the ability to teach at depth.</p><div class="article-foot"><span>Performance · Spark</span><span class="article-arrow">→</span></div></a>
-          <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/shuffle-wars-may-the-hash-be-with-you-10bc7c817a21"><div class="topline"><span>Popular read</span><span>Medium ↗</span></div><div class="cover shuffle"><div class="shuffle-group left"><span></span><span></span><span></span><span></span></div><div class="shuffle-flow"><span class="shuffle-packet p1"></span><span class="shuffle-packet gold p2"></span><span class="shuffle-packet p3"></span><span class="shuffle-packet gold p4"></span><span class="shuffle-packet p5"></span><span class="shuffle-packet gold p6"></span></div><div class="shuffle-group right"><span></span><span></span><span></span><span></span></div></div><h4 class="serif">Shuffling in Spark: May the Hash Be With You!</h4><p class="serif">Technical depth with a memorable hook — exactly the kind of content that helps recruiters remember the person behind the engineering.</p><div class="article-foot"><span>Shuffle · Internals</span><span class="article-arrow">→</span></div></a>
-          <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/spark-joins-broadcast-hash-join-spark-joins-series-ec14ae8bb810"><div class="topline"><span>Deep dive</span><span>Medium ↗</span></div><div class="cover joincover"><span class="join-bridge"></span><div class="join-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><h4 class="serif">The Ultimate Guide to Broadcast Hash Join</h4><p class="serif">Joins are where confusion compounds. This one showcases your ability to break down what matters without bloating the explanation.</p><div class="article-foot"><span>Joins · Tuning</span><span class="article-arrow">→</span></div></a>
-          <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/coalesce-in-spark-the-internal-working-47727d064958"><div class="topline"><span>Precision</span><span>Medium ↗</span></div><div class="cover coalesce"><div class="coal-many"><span style="height:28px"></span><span style="height:46px"></span><span style="height:62px"></span><span style="height:38px"></span><span style="height:54px"></span><span style="height:34px"></span><span style="height:70px"></span><span style="height:42px"></span></div><span class="coal-arrow"></span><div class="coal-few"><span style="height:74px"></span><span style="height:58px"></span><span style="height:82px"></span></div><span class="coal-dot d1"></span><span class="coal-dot d2"></span><span class="coal-dot d3"></span><span class="coal-dot d4"></span></div><h4 class="serif">Coalesce in Spark — The Internal Working</h4><p class="serif">A strong support article for your Spark identity: implementation-first, educational, and practical for real engineering audiences.</p><div class="article-foot"><span>Coalesce · Spark</span><span class="article-arrow">→</span></div></a>
+          <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/partitioning-strategies-in-spark-e1a0164a7673"><div class="topline"><span>Deep dive</span><span>Medium ↗</span></div><div class="cover partitioncover"></div><h4 class="serif">Partitioning in Spark — The Ultimate Guide</h4><p class="serif">How partitioning really shapes parallelism, performance, and the way Spark distributes work.</p><div class="article-foot"><span>Spark · Performance</span><span class="article-arrow">→</span></div></a>
+          <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/shuffle-wars-may-the-hash-be-with-you-10bc7c817a21"><div class="topline"><span>Spark internals</span><span>Medium ↗</span></div><div class="cover shuffle"><div class="shuffle-group left"><span></span><span></span><span></span><span></span></div><div class="shuffle-flow"><span class="shuffle-packet p1"></span><span class="shuffle-packet gold p2"></span><span class="shuffle-packet p3"></span><span class="shuffle-packet gold p4"></span><span class="shuffle-packet p5"></span><span class="shuffle-packet gold p6"></span></div><div class="shuffle-group right"><span></span><span></span><span></span><span></span></div></div><h4 class="serif">Shuffling in Spark: May the Hash Be With You!</h4><p class="serif">What a shuffle actually costs, why data moves, and how hash-based exchange affects performance.</p><div class="article-foot"><span>Spark · Internals</span><span class="article-arrow">→</span></div></a>
+          <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/spark-joins-broadcast-hash-join-spark-joins-series-ec14ae8bb810"><div class="topline"><span>Deep dive</span><span>Medium ↗</span></div><div class="cover joincover"><span class="join-bridge"></span><div class="join-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><h4 class="serif">The Ultimate Guide to Broadcast Hash Join</h4><p class="serif">When broadcast joins work, why they are fast, and what Spark is doing beneath the API.</p><div class="article-foot"><span>Spark · Joins</span><span class="article-arrow">→</span></div></a>
+          <a class="article-card tilt reveal" target="_blank" rel="noreferrer" href="https://medium.com/@ykothari99/coalesce-in-spark-the-internal-working-47727d064958"><div class="topline"><span>Inside Spark</span><span>Medium ↗</span></div><div class="cover coalesce"><div class="coal-many"><span style="height:28px"></span><span style="height:46px"></span><span style="height:62px"></span><span style="height:38px"></span><span style="height:54px"></span><span style="height:34px"></span><span style="height:70px"></span><span style="height:42px"></span></div><span class="coal-arrow"></span><div class="coal-few"><span style="height:74px"></span><span style="height:58px"></span><span style="height:82px"></span></div><span class="coal-dot d1"></span><span class="coal-dot d2"></span><span class="coal-dot d3"></span><span class="coal-dot d4"></span></div><h4 class="serif">Coalesce in Spark — The Internal Working</h4><p class="serif">What coalesce changes, what it does not, and why partition reduction behaves the way it does in real workloads.</p><div class="article-foot"><span>Spark · Partitions</span><span class="article-arrow">→</span></div></a>
         </div>
       </div>
 
       <div class="video-wall" id="video">
-        <div class="wall-head reveal"><div><div class="section-label">My videos</div><h3 class="serif">Videos I’ve created.</h3><p class="serif">Videos around Spark, PySpark, and data engineering concepts that I’ve created to explain ideas more visually.</p></div><a href="https://www.youtube.com/@theycallmecoder" target="_blank" rel="noreferrer">Visit YouTube ↗</a></div>
+        <div class="wall-head reveal"><div><div class="section-label">Videos</div><h3 class="serif">Engineering, made visual.</h3><p class="serif">Visual explanations for Spark, PySpark, and data engineering — for ideas that become clearer when you can see them move.</p></div><a href="https://www.youtube.com/@theycallmecoder" target="_blank" rel="noreferrer">Watch on YouTube ↗</a></div>
         <div class="video-grid">
-          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/videos"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Channel overview</div><div class="video-scribble"><span style="width:86%"></span><span></span><span></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">YouTube Channel</h4><p class="serif">A direct way to explore the videos I’ve published across Spark, PySpark, and data engineering topics.</p><div class="topic-tags"><span>Explainers</span><span>Data Engineering Videos</span><span>Visual Learning</span></div></a>
-          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=spark"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Spark internals</div><div class="video-scribble"><span style="width:78%"></span><span style="width:68%"></span><span style="width:52%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">Spark Videos</h4><p class="serif">A focused set of videos for people who want to explore Spark concepts and internals.</p><div class="topic-tags"><span>Spark</span><span>Internals</span><span>Performance</span></div></a>
-          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=pyspark"><div class="video-frame"><div class="video-monitor"><div class="video-caption">PySpark focus</div><div class="video-scribble"><span style="width:84%"></span><span style="width:70%"></span><span style="width:46%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">PySpark Videos</h4><p class="serif">A collection of PySpark-oriented videos built around practical explanations and examples.</p><div class="topic-tags"><span>PySpark</span><span>Tutorials</span><span>Examples</span></div></a>
-          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=data%20engineering"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Data engineering</div><div class="video-scribble"><span style="width:82%"></span><span style="width:76%"></span><span style="width:54%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">Data Engineering Videos</h4><p class="serif">A broader set of videos around data engineering concepts, systems, and modern stack ideas.</p><div class="topic-tags"><span>Modern Stack</span><span>Concepts</span><span>Systems</span></div></a>
+          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/videos"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Latest videos</div><div class="video-scribble"><span style="width:86%"></span><span></span><span></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">YouTube Channel</h4><p class="serif">Practical explainers across Spark, PySpark, and modern data engineering.</p><div class="topic-tags"><span>Visual explainers</span><span>Data engineering</span><span>Learn visually</span></div></a>
+          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=spark"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Spark internals</div><div class="video-scribble"><span style="width:78%"></span><span style="width:68%"></span><span style="width:52%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">Spark Videos</h4><p class="serif">Videos that break Spark internals into visual, understandable pieces.</p><div class="topic-tags"><span>Spark</span><span>Internals</span><span>Performance</span></div></a>
+          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=pyspark"><div class="video-frame"><div class="video-monitor"><div class="video-caption">PySpark focus</div><div class="video-scribble"><span style="width:84%"></span><span style="width:70%"></span><span style="width:46%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">PySpark Videos</h4><p class="serif">PySpark concepts taught through practical examples and visual walkthroughs.</p><div class="topic-tags"><span>PySpark</span><span>Tutorials</span><span>Examples</span></div></a>
+          <a class="video-card tilt reveal" target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder/search?query=data%20engineering"><div class="video-frame"><div class="video-monitor"><div class="video-caption">Data engineering</div><div class="video-scribble"><span style="width:82%"></span><span style="width:76%"></span><span style="width:54%"></span></div><div class="video-bottom"><div class="video-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="video-timeline"></div></div></div></div><h4 class="serif">Data engineering</h4><p class="serif">Broader lessons on data systems, architecture, and the modern engineering stack.</p><div class="topic-tags"><span>Modern data stack</span><span>Concepts</span><span>Systems</span></div></a>
         </div>
       </div>
     </div>
   </section>
 
   <section class="proof shell" id="proof">
-    <div class="proof-head reveal"><div><div class="section-label">The proof, cleanly arranged</div><h2 class="serif">Experience and credentials.</h2><p class="serif">Projects now live higher on the page. This area is kept cleaner so the credibility lands without repeating the showcase.</p></div><a class="resume-btn" href="assets/Yash_Kothari_Resume.docx" download>Download résumé ↘</a></div>
+    <div class="proof-head reveal"><div><div class="section-label">Experience</div><h2 class="serif">Built in the real world.</h2></div></div>
     <div class="tabs reveal" role="tablist"><button class="tab active" data-tab="experience">Experience</button><button class="tab" data-tab="credentials">Credentials</button></div>
 
     <div class="panel active" id="panel-experience">
       <div class="experience-grid">
-        <article class="exp-card reveal tilt"><div class="exp-visual"></div><div class="exp-top"><div><h3 class="company serif">Deloitte USI</h3><div class="role">Data Consultant</div></div><div class="date">Nov 2024 — Present</div></div><ul class="wins"><li>Built a Databricks Genie GenAI agent for configuration generation with dedicated training and validation modes, improving team productivity by 70%.</li><li>Led five data engineers and delivered five major releases on schedule.</li><li>Reduced Databricks compute and storage costs by 30% through performance and infrastructure optimization.</li><li>Designed a generic Databricks workflow framework operating across 1200+ tables.</li></ul><details><summary>More impact</summary><ul class="wins"><li>Built a Python dependency explorer with graph and tree views, improving prioritization efficiency by 30%.</li><li>Contributed ingestion pipelines across Salesforce, Oracle, SQL Server, fixed-width, XML and JSON sources.</li></ul></details></article>
-        <article class="exp-card reveal tilt"><div class="exp-visual"></div><div class="exp-top"><div><h3 class="company serif">LTIMindtree</h3><div class="role">Data Engineer</div></div><div class="date">Aug 2021 — Nov 2024</div></div><ul class="wins"><li>Consolidated Databricks workflows to cut cluster runtime by 4 hours.</li><li>Designed error reprocessing that reduced SLA breaches by 70%.</li><li>Built 13 Azure Data Factory pipelines from PostgreSQL to SQL Server.</li><li>Improved a Python utility handling batches of 1M+ AWS S3 files.</li></ul><details><summary>More impact</summary><ul class="wins"><li>Designed 50+ source-to-target mappings for EDW loading.</li><li>Built SSIS ETL packages and stored procedures and delivered seven Power BI reports.</li></ul></details></article>
+        <article class="exp-card reveal tilt"><div class="exp-visual"></div><div class="exp-top"><div><h3 class="company serif">Deloitte USI</h3><div class="role">Data Consultant</div></div><div class="date">Nov 2024 — Present</div></div><ul class="wins"><li>Built a Databricks Genie GenAI agent for configuration generation, with dedicated training and validation modes, improving team productivity by 70%.</li><li>Led a team of five data engineers and delivered five major releases on schedule.</li><li>Cut Databricks compute and storage costs by 30% through performance and infrastructure optimization.</li><li>Designed a reusable Databricks workflow framework operating across 1,200+ tables.</li></ul><details><summary>More</summary><ul class="wins"><li>Built a Python dependency explorer with graph and tree views, improving prioritization efficiency by 30%.</li><li>Built and supported ingestion pipelines across Salesforce, Oracle, SQL Server, fixed-width, XML, and JSON sources.</li></ul></details></article>
+        <article class="exp-card reveal tilt"><div class="exp-visual"></div><div class="exp-top"><div><h3 class="company serif">LTIMindtree</h3><div class="role">Data Engineer</div></div><div class="date">Aug 2021 — Nov 2024</div></div><ul class="wins"><li>Consolidated Databricks workflows and cut cluster runtime by 4 hours.</li><li>Designed an error-reprocessing flow that reduced SLA breaches by 70%.</li><li>Built 13 Azure Data Factory pipelines moving data from PostgreSQL to SQL Server.</li><li>Improved a Python utility handling batches of more than 1 million AWS S3 files.</li></ul><details><summary>More</summary><ul class="wins"><li>Designed 50+ source-to-target mappings for EDW loading.</li><li>Built SSIS ETL packages and stored procedures, and delivered seven Power BI reports.</li></ul></details></article>
       </div>
     </div>
 
     <div class="panel" id="panel-credentials">
       <div class="credentials">
         <article class="credential-card reveal tilt"><div class="cred-visual"></div><h3 class="serif">Certifications & recognition</h3><div class="credential-list"><div class="cred"><b>Databricks Certified</b><span>Data Engineer Associate</span></div><div class="cred"><b>HackerRank</b><span>Rank 134 — Hack the Interview VI, Asia Pacific</span></div><div class="cred"><b>AlgoExpert</b><span>Certified</span></div><div class="cred"><b>Microsoft MTA</b><span>Introduction to Python</span></div></div></article>
-        <article class="credential-card education reveal tilt"><div class="cred-visual"></div><h3 class="serif">Education & stack</h3><p><strong>Savitribai Phule University</strong><br>Bachelor’s Degree in Computer Engineering<br>CGPA: 8.71 / 10<br>2017 — 2021</p><div class="stack"><span class="chip">PySpark</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Databricks</span><span class="chip">Snowflake</span><span class="chip">Azure</span><span class="chip">AWS</span></div></article>
+        <article class="credential-card education reveal tilt"><div class="cred-visual"></div><h3 class="serif">Education & tools</h3><p><strong>Savitribai Phule University</strong><br>Bachelor’s Degree in Computer Engineering<br>CGPA: 8.71 / 10<br>2017 — 2021</p><div class="stack"><span class="chip">PySpark</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Databricks</span><span class="chip">Snowflake</span><span class="chip">Azure</span><span class="chip">AWS</span></div></article>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="footer shell" id="contact">
-  <div class="footer-panel"><div class="footer-quote serif">“Complex systems. Clearer explanations. A brighter tomorrow.”</div><div class="footer-links"><a href="#showcase">Work</a><a href="#writing">Writing</a><a href="#video">Videos</a><a href="#proof">About</a></div><div class="socials"><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ykothari99">in</a><a target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder">YT</a><a target="_blank" rel="noreferrer" href="https://github.com/theycallme-batman">GH</a></div></div>
+  <div class="footer-panel"><div class="footer-quote serif">Data engineering · Writing · Video</div><div class="footer-links"><a href="#showcase">Work</a><a href="#writing">Writing</a><a href="#video">Videos</a><a href="#proof">About</a></div><div class="socials"><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ykothari99">in</a><a target="_blank" rel="noreferrer" href="https://www.youtube.com/@theycallmecoder">YT</a><a target="_blank" rel="noreferrer" href="https://github.com/theycallme-batman">GH</a></div></div>
 </footer>
 
 <script>
-  // orbit interaction
-  const orbit=document.getElementById('orbit'), dragZone=document.getElementById('dragZone'), signal=document.getElementById('signal'), pills=[...document.querySelectorAll('.pill')], signalTitle=document.getElementById('signalTitle'), signalDesc=document.getElementById('signalDesc'), character=document.getElementById('character'), pupils=[...document.querySelectorAll('.pupil')];
-  let currentActive=pills[0], dragging=false;
-  function updateCard(el){ if(!el) return; signalTitle.textContent=el.dataset.title; signalDesc.textContent=el.dataset.desc; pills.forEach(p=>p.classList.remove('active')); el.classList.add('active'); currentActive=el; }
-  function pointFor(el){ const o=orbit.getBoundingClientRect(), r=el.getBoundingClientRect(); return {x:r.left+r.width/2-o.left,y:r.top+r.height/2-o.top}; }
-  function setBall(x,y){ signal.style.left=x+'px'; signal.style.top=y+'px'; drawTrail(x,y); }
-  function moveToRole(el){ signal.classList.remove('free'); const p=pointFor(el); setBall(p.x,p.y); updateCard(el); }
-  function nearest(x,y){ let n=null,d=Infinity; pills.forEach(p=>{ const q=pointFor(p), v=Math.hypot(q.x-x,q.y-y); if(v<d){d=v;n=p} }); return {n,d}; }
-  function clamp(cx,cy){ const z=dragZone.getBoundingClientRect(), o=orbit.getBoundingClientRect(), mx=z.left+z.width/2, my=z.top+z.height/2, rad=z.width/2-13; let dx=cx-mx, dy=cy-my, dist=Math.hypot(dx,dy); if(dist>rad){ const s=rad/dist; dx*=s; dy*=s; } return {x:mx+dx-o.left,y:my+dy-o.top}; }
-  signal.addEventListener('pointerdown', e=>{ dragging=true; signal.classList.add('dragging','free'); signal.setPointerCapture(e.pointerId); e.preventDefault(); });
-  signal.addEventListener('pointermove', e=>{ if(!dragging) return; const p=clamp(e.clientX,e.clientY); setBall(p.x,p.y); const q=nearest(p.x,p.y); if(q.d<78) updateCard(q.n); });
-  const finish=()=>{ dragging=false; signal.classList.remove('dragging'); };
-  signal.addEventListener('pointerup', finish); signal.addEventListener('pointercancel', finish);
-  pills.forEach(p=>{ p.addEventListener('mouseenter', ()=>updateCard(p)); p.addEventListener('click', ()=>moveToRole(p)); });
-
-  // trail drawing
-  const canvas=document.getElementById('trail'); const ctx=canvas.getContext('2d'); let trail=[];
-  function resizeCanvas(){ canvas.width=canvas.offsetWidth*devicePixelRatio; canvas.height=canvas.offsetHeight*devicePixelRatio; ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0); }
-  function drawTrail(x,y){ trail.push({x,y,life:1}); if(trail.length>28) trail.shift(); renderTrail(); }
-  function renderTrail(){ ctx.clearRect(0,0,canvas.offsetWidth,canvas.offsetHeight); trail.forEach((p,i)=>{ p.life*=0.975; ctx.beginPath(); ctx.fillStyle=`rgba(181,137,75,${0.22*(i/trail.length)})`; ctx.arc(p.x,p.y,Math.max(2,8*(i/trail.length)),0,Math.PI*2); ctx.fill(); }); trail=trail.filter(p=>p.life>.06); }
-  function animateTrail(){ renderTrail(); requestAnimationFrame(animateTrail); }
+  // role pills
+  const pills=[...document.querySelectorAll('.pill')], character=document.getElementById('character'), pupils=[...document.querySelectorAll('.pupil')];
+  pills.forEach(p=>{
+    p.addEventListener('mouseenter', ()=>{
+      pills.forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+    });
+    p.addEventListener('click', ()=>{
+      pills.forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+    });
+  });
 
   // eye follow and subtle character tilt
   window.addEventListener('pointermove', e=>{
@@ -1171,9 +1412,6 @@
     card.addEventListener('click', e=>{ if(e.target.closest('a,button,summary')) return; openCard(); });
     card.addEventListener('keydown', e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); openCard(); } });
   });
-
-  window.addEventListener('load', ()=>{ resizeCanvas(); moveToRole(pills[0]); animateTrail(); requestAnimationFrame(animatePathFollowers); });
-  window.addEventListener('resize', ()=>{ resizeCanvas(); if(!signal.classList.contains('free')) moveToRole(currentActive); });
 </script>
 </body>
 </html>
